@@ -115,7 +115,7 @@ const { name } = metadata;
 export { metadata, name };
 
 export const settings = {
-	title: __( 'Media & Text' ),
+	title: __( 'Media Card' ),
 	description: __( 'Set media and words side-by-side for a richer layout.' ),
 	icon,
 	keywords: [ __( 'image' ), __( 'video' ) ],
@@ -142,8 +142,10 @@ export const settings = {
 			},
 		],
 	},
-// 	transforms,
+	transforms,
 	edit,
-// 	save,
-// 	deprecated,
+	save,
+	deprecated,
 };
+
+registerBlockType( 'mediaCard', settings );
