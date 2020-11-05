@@ -1,15 +1,19 @@
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
+.wp-block-media-card .__resizable_base__ {
+	grid-column: 1 / span 2;
+	grid-row: 2;
+}
 
-.wp-block-cgb-block-guten-card  {
-  background: $green;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+.wp-block-media-card .editor-media-container__resizer {
+	// The resizer sets a inline width but as we are using a grid layout,
+	// we set the width on container.
+	width: 100% !important;
+}
+
+.wp-block-media-card.is-image-fill .editor-media-container__resizer {
+	// The resizer sets an inline height but for the image fill we set it to full height.
+	height: 100% !important;
+}
+
+.wp-block-media-card > .block-editor-block-list__layout > .block-editor-block-list__block {
+	max-width: unset;
 }

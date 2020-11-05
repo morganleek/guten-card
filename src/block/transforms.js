@@ -9,7 +9,7 @@ const transforms = {
 			type: 'block',
 			blocks: [ 'core/image' ],
 			transform: ( { alt, url, id, anchor } ) =>
-				createBlock( 'core/media-text', {
+				createBlock( 'core/media-card', {
 					mediaAlt: alt,
 					mediaId: id,
 					mediaUrl: url,
@@ -21,7 +21,7 @@ const transforms = {
 			type: 'block',
 			blocks: [ 'core/video' ],
 			transform: ( { src, id, anchor } ) =>
-				createBlock( 'core/media-text', {
+				createBlock( 'core/media-card', {
 					mediaId: id,
 					mediaUrl: src,
 					mediaType: 'video',

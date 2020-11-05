@@ -90,12 +90,12 @@ export default function save( { attributes } ) {
 	return (
 		<div { ...useBlockProps.save( { className, style } ) }>
 			<figure
-				className="wp-block-media-text__media"
+				className="wp-block-media-card__media"
 				style={ backgroundStyles }
 			>
 				{ ( mediaTypeRenders[ mediaType ] || noop )() }
 			</figure>
-			<div className="wp-block-media-text__content">
+			<div className="wp-block-media-card__content">
 				<InnerBlocks.Content />
 			</div>
 		</div>

@@ -288,7 +288,7 @@ function MediaTextEdit( { attributes, isSelected, setAttributes } ) {
 	} );
 
 	const innerBlocksProps = useInnerBlocksProps(
-		{ className: 'wp-block-media-text__content' },
+		{ className: 'wp-block-media-card__content' },
 		{ template: TEMPLATE }
 	);
 
@@ -319,7 +319,7 @@ function MediaTextEdit( { attributes, isSelected, setAttributes } ) {
 			</BlockControls>
 			<div { ...blockProps }>
 				<MediaContainer
-					className="wp-block-media-text__media"
+					className="wp-block-media-card__media"
 					onSelectMedia={ onSelectMedia }
 					onWidthChange={ onWidthChange }
 					commitWidthChange={ commitWidthChange }
